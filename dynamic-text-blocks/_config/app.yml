@@ -1,0 +1,3 @@
+DynamicTextBlock:
+  extensions:
+    - Versioned("Stage","Live)

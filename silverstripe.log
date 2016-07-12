@@ -1,0 +1,5 @@
+[11-Jul-2016 12:50:24] Error at \framework\model\connect\DBConnector.php line 55: Uncaught SS_DatabaseException: Couldn't run query:
+
+CREATE DATABASE "ss_mysite" DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci
+
+Access denied for user ''@'localhost' to database 'ss_mysite' (http://bbproject.local/dev/build?returnURL=%2Fcontact-us%2F)
