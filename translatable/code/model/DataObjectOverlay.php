@@ -14,6 +14,5 @@ class DataObjectOverlay extends DataObject
 
     private static $has_one = array(
         "Parent" => "DataObject",
-
     );
 }

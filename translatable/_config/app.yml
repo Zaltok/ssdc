@@ -1,0 +1,6 @@
+SiteTree:
+  extensions:
+    - TranslatableSiteTreeExtension
+SiteConfig:
+  extensions:
+    - TranslatableSiteConfigExtension

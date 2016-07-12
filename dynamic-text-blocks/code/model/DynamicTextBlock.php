@@ -14,6 +14,6 @@ class DynamicTextBlock extends DataObject
         'Description' => 'Text',
         'Hidden' => 'Boolean',
         'Parent' => 'Int',
-        'ParentType' => 'Enum(Page)'
+        'ParentType' => 'Enum(array("Page")'
     );
 }

@@ -9,7 +9,8 @@
 class SiteLanguage extends DataObject
 {
     private static $db = array(
-        "Name" => "Varchar(255)"
+        "Name" => "Varchar(255)",
+        "Shortcode" => "Varchar(2)",
     );
 
     private static $has_one = array(

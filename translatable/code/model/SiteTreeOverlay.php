@@ -24,4 +24,17 @@ class SiteTreeOverlay extends DataObject
         "CanViewType" => "Enum('Anyone, LoggedInUsers, OnlyTheseUsers, Inherit', 'Inherit')",
         "CanEditType" => "Enum('LoggedInUsers, OnlyTheseUsers, Inherit', 'Inherit')",
     );
+    private static $has_one = array(
+        "Language" => "SiteLanguage",
+        "Parent" => "SiteTree"
+    );
+
+    public function getCMSFields()
+    {
+
+        $fields = parent::getCMSFields();
+        $fields->removeByName("HasBrokenFile");
+        $fields->removeByName("HasBrokenLink");
+        return $fields;
+    }
 }
