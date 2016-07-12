@@ -8,6 +8,13 @@
  */
 class SiteLanguage extends DataObject
 {
-    private static
+    private static $db = array(
+        "Name" => "Varchar(255)"
+    );
+
+    private static $has_one = array(
+        "Flag" => "Image"
+    );
+
 
 }
