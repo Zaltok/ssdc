@@ -17,4 +17,5 @@ _ss_environment.php
 /themes/simple
 # END of GitIgnoreEditor
 
-/.idea
+/.idea/
+.idea
