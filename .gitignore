@@ -16,6 +16,6 @@ _ss_environment.php
 /siteconfig
 /themes/simple
 # END of GitIgnoreEditor
-
-/.idea/
 .idea
+silverstripe.log
+
