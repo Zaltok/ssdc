@@ -1,0 +1,7 @@
+---
+Name: myroutes
+After: '#rootroutes'
+---
+Director:
+  rules:
+    '$Lang/$URLSegment//$Action/$ID/$OtherID': 'TranslatableController'

@@ -18,6 +18,19 @@ class TranslatableSiteTreeExtension extends DataExtension
         $gridLangVersions = new GridField("SiteTreeOverlays", "Language Versions", SiteTreeOverlay::get());
         $gridLangVersions->setConfig(GridFieldConfig_RecordEditor::create());
         $fields->addFieldToTab("Root.LanguageVersions", $gridLangVersions);
+
+    }
+
+    public function getContent()
+    {
+        if (isset($_GET["L"])) {
+            $Overlay = SiteTreeOverlay::get_one("SiteTreeOverlay", array("LanguageID" => $_GET["L"], "ParentID" => $this->owner->ID));
+            if ($Overlay != null && strlen($Overlay->Content) > 0) return $Overlay->Content;
+            else return $this->owner->getField("Content");
+        } else {
+            return $this->owner->getField("Content");
+        }
+
     }
 
 }
