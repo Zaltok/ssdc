@@ -1,8 +1,6 @@
 ---
 Name: translatableroutes
-Before: '*'
-After:
-  - '#rootroutes'
+Before: '#modelascontrollerroutes'
 ---
 Director:
   rules:
