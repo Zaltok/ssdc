@@ -1,3 +1,9 @@
+Name: translatable
+Before: '*'
+After:
+  - 'cms/*'
+  - 'framework/*'
+
 SiteTree:
   extensions:
     - TranslatableSiteTreeExtension

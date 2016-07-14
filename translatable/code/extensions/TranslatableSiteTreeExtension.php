@@ -12,6 +12,8 @@ class TranslatableSiteTreeExtension extends DataExtension
         "SiteTreeOverlays" => "SiteTreeOverlay"
     );
 
+
+
     public function updateCMSFields(FieldList $fields)
     {
         $fields->findOrMakeTab("Root.LanguageVersions");
@@ -32,5 +34,10 @@ class TranslatableSiteTreeExtension extends DataExtension
         }
 
     }
+    public function updateRelativeLink(&$base ) {
+        $base = "de/".$base;
+    }
+
+
 
 }
